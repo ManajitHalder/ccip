@@ -35,3 +35,28 @@ The high-level process of tokenizing a real-world-asset involves several steps.
 - `Offchain connection`: Most tokenized assets require high-quality offchain data from secure and reliable oracle services. Using a trusted verification mechanism to confirm the assets backing the RWA tokens is essential for maintaining user transparency. This typically involves a reputable service like Chainlink.
 
 - `Issuance`: Deploying the smart contracts on the chosen network, minting the tokens, and making them available for usage.
+
+## Deploy RealEstateToken.sol to Avalanche Fuji
+
+Make sure to turn the `Solidity compiler optimizer on` to `200 runs` and `set `EVM version` to `Paris`.
+
+Add the following in `DEPLOY` configuration section in `Remix`:
+
+- `URI_`: ""
+
+- `ccipRouterAddress`: 0xF694E193200268f9a4868e4Aa017A0118C9a8177
+    - Refer https://cll-devrel.gitbook.io/tokenized-rwa-bootcamp-2024/day-1/exercise-1-cross-chain-real-estate#deploy-realestatetoken.sol-to-avalanche-fuji
+    - Cross check from: https://docs.chain.link/ccip/supported-networks/v1_2_0/testnet#avalanche-fuji
+
+- `linkTokenAddress`: 0x0b9d5D9136855f6FEc3c0993feE6E9CE8a297846
+    - Refer https://cll-devrel.gitbook.io/tokenized-rwa-bootcamp-2024/day-1/exercise-1-cross-chain-real-estate#deploy-realestatetoken.sol-to-avalanche-fuji
+    - Cross check from: https://docs.chain.link/ccip/supported-networks/v1_2_0/testnet#avalanche-fuji
+
+- `currentChainSelector`: 14767482510784806043
+    - Refer https://cll-devrel.gitbook.io/tokenized-rwa-bootcamp-2024/day-1/exercise-1-cross-chain-real-estate#deploy-realestatetoken.sol-to-avalanche-fuji
+    - Cross check from: https://docs.chain.link/ccip/supported-networks/v1_2_0/testnet#avalanche-fuji
+
+- `functionsRouterAddress`: 0xA9d587a00A31A52Ed70D6026794a8FC5E2F5dCb0
+    - Refer https://cll-devrel.gitbook.io/tokenized-rwa-bootcamp-2024/day-1/exercise-1-cross-chain-real-estate#deploy-realestatetoken.sol-to-avalanche-fuji
+    - Cross check from: https://functions.chain.link/ after `Connect Wallet` and Selecting `Avalance Fuji network`
+
