@@ -60,3 +60,23 @@ Add the following in `DEPLOY` configuration section in `Remix`:
     - Refer https://cll-devrel.gitbook.io/tokenized-rwa-bootcamp-2024/day-1/exercise-1-cross-chain-real-estate#deploy-realestatetoken.sol-to-avalanche-fuji
     - Cross check from: https://functions.chain.link/ after `Connect Wallet` and Selecting `Avalance Fuji network`
 
+## Homework
+
+You will need to enter the following contract addresses that you deployed to Avalance Fuji:
+
+- RealStateToken.sol:   0x32F411b1b788C01C40ce63068A73Fe02C2e5a9B5
+- Issuer.sol:           0x630883c9411032E48De1E904Aa3060397b8c1700
+- RWALending.sol:       
+- EnglishAuction.sol: 
+
+Subscription ID: 13239
+
+## Call the issue function of the Issuer.sol smart contract
+
+To issue an ERC-1155 token to Alice, call the issue function of the Issuer.sol smart contract from the address you used to deploy that contract, and provide:
+
+- `to`: Alice's wallet address (put any address you own)
+- `amount`: 20
+- `subscriptionId`: The Chainlink Functions Subscription ID you just created
+- `gasLimit`: 300000
+- `donID`: 0x66756e2d6176616c616e6368652d66756a692d31000000000000000000000000 (fun-avalanche-fuji-1)
