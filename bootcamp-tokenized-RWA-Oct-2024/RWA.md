@@ -1,8 +1,13 @@
 # RWA Bootcamp by Chainlink October 2024
 
+[RWA Premier - Detailed Reference of Real-World Assets](https://github.com/andrejrakic/rwa-primer/tree/main)
+
+Other resource links:
+
 - [Day-1 youtube link](https://www.youtube.com/watch?v=iXWovCSahE0)
 - [Day-2 youtube link](https://www.youtube.com/watch?v=OvfGvtNzEOM)
 - [Gitbook presentation link](https://cll-devrel.gitbook.io/tokenized-rwa-bootcamp-2024/)
+- [Github source code link](https://github.com/andrejrakic/rwa-primer/blob/main)
 
 ## What are Real-World Assets (RWAs)?
 
@@ -66,8 +71,8 @@ You will need to enter the following contract addresses that you deployed to Ava
 
 - RealStateToken.sol:   0x32F411b1b788C01C40ce63068A73Fe02C2e5a9B5
 - Issuer.sol:           0x630883c9411032E48De1E904Aa3060397b8c1700
-- RWALending.sol:       
-- EnglishAuction.sol: 
+- RWALending.sol:       0xA29cF0E68f58988BD9108628D3e101EAb91A5320
+- EnglishAuction.sol:   0xc8B3E2d1F5b8C7143a55f4b5360E3c3BE6d8db73
 
 Subscription ID: 13239
 
@@ -80,3 +85,13 @@ To issue an ERC-1155 token to Alice, call the issue function of the Issuer.sol s
 - `subscriptionId`: The Chainlink Functions Subscription ID you just created
 - `gasLimit`: 300000
 - `donID`: 0x66756e2d6176616c616e6368652d66756a692d31000000000000000000000000 (fun-avalanche-fuji-1)
+
+Chainlink Function url [https://functions.chain.link/fuji/13239]
+
+- `Subscription id`: `13239`
+- `Consumers` added: 2
+- `Consumer 1` address: `0x630883c9411032E48De1E904Aa3060397b8c1700`
+- `Cousumer 2` address: `0x32F411b1b788C01C40ce63068A73Fe02C2e5a9B5`
+
+Chailink Automation url: https://automation.chain.link/fuji/54467677339141086500662304650729934318048962756677572353893022489582490236471
+
